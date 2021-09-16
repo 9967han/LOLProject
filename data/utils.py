@@ -38,3 +38,17 @@ def init_userInfo(filename):
         json.dump(write_data, make_file, ensure_ascii=False, indent='\t')
 
     return write_data
+
+
+def init_matchInfo(filename):
+    write_data = {}
+    write_data['puuid'] = {}
+    write_data['encid'] = {}
+    store_data_type = ["largetsKillingSpree", "goldEarned", "timePlayed", "assists", "deaths", "kills", "detectorWardsPlaced", "killingSprees", "wardsKilled", "wardsPlaced", "win", "visionScore", "totalDamageDealtToChampions", "totalDamageTaken", "totalMinionsKilled", "neutralMinionsKilled", "lane"]
+    for i in store_data_type:
+        write_data[i] = {}
+
+    with open(filename, 'w', encoding='utf-8') as make_file:
+        json.dump(write_data, make_file, ensure_ascii=False, indent='\t')
+
+    return write_data
