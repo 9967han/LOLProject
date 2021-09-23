@@ -23,13 +23,9 @@ app.get('/main', function(req, res){
 //static file(.js) routing : public 디렉터리 내 파일들은 static으로 요청시 내려받을 수 있음.
 app.use(express.static("public"))
 
-/*app.post('/search', function(req, res){
-    res.sendFile(__dirname + "/public/main.html")
-});*/
-
 app.get('/search',  async (req, res) => {
     console.log("id1 : " + req.query.id1)
-    res.sendFile(__dirname + "/public/main.html")
+    res.sendFile(__dirname + "/public/form.html")
     const { data } = await axios.get("https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + urlencode(req.query.id1) + "?api_key=" + api_key)
     console.log(data)
 })
