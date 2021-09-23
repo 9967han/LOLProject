@@ -32,17 +32,6 @@ class Dataset(data.Dataset):
 	def __len__(self):
 		return len(self.data)
 
-	def __getitem__(self, index):
-
-		if self.mode in ["training"]:
-			data, target = self.data[index], self.targets[index]
-
-			if self.transform is not None:
-				data = self.transform(data)
-			return data, target
-
-		return
-
 	def load_data(self):
 		data = []
 		target = []
@@ -91,6 +80,8 @@ class Dataset(data.Dataset):
 						one_of_data.append(Match_data["largestKillingSpree"][match])
 						one_of_data.append(gold_per_minute)
 						one_of_data.append(kda_of_user)
+						one_of_data.append(damage_dealt_per_minute)
+						one_of_data.append(damage_taken_per_minute)
 						one_of_data.append(Match_data["detectorWardsPlaced"][match])
 						one_of_data.append(Match_data["killingSprees"][match])
 						one_of_data.append(Match_data["wardsKilled"][match])
@@ -100,7 +91,10 @@ class Dataset(data.Dataset):
 						one_of_data.append(champion_proficiency)
 
 						data.append(one_of_data)
-						target.append(Match_data["win"][match])
+						if Match_data["win"][match]:
+							target.append([1])
+						else:
+							target.append([0])
+							
 
-			target = torch.BoolTensor(target)
-			return data, target
+			return torch.FloatTensor(data), torch.FloatTensor(target)
