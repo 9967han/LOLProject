@@ -28,6 +28,7 @@ class Dataset(data.Dataset):
 
 		if self.mode in ["training"]:
 			self.data, self.targets = self.load_data()
+			self.data = (self.data - self.data.mean()) / self.data.std()
 
 	def __len__(self):
 		return len(self.data)
