@@ -3,7 +3,7 @@ var express = require("express");
 var axios = require("axios");
 var urlencode = require("urlencode");
 const ejs = require("ejs");
-const api_key = "RGAPI-24680870-7ece-4b42-9918-aa9dd19bcc87"; // 여기에 key 입력
+const api_key = ""; // 여기에 key 입력
 
 var app = express(); // express 함수 실행
 app.set('view engine', 'ejs');
