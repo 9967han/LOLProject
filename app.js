@@ -3,7 +3,7 @@ var express = require("express");
 var axios = require("axios");
 var urlencode = require("urlencode");
 const ejs = require("ejs");
-const api_key = ""; // 여기에 key 입력
+const api_key = "RGAPI-24680870-7ece-4b42-9918-aa9dd19bcc87"; // 여기에 key 입력
 
 var app = express(); // express 함수 실행
 app.set('view engine', 'ejs');
@@ -132,70 +132,60 @@ app.get("/search", async (req, res) => {
         api_key
     );
     await sleep(1000);
-    const summoner1Match = summoner1MatchList.map(async (match_id) => {
-      try{
-        await axios.get(
+    const summoner1Match = [], summoner2Match = [], summoner3Match = [], summoner4Match = [], summoner5Match = [];
+    async function makeSummonerMatch() {
+      for (const matchId of summoner1MatchList) {
+        let result = await axios.get(
           "https://asia.api.riotgames.com/lol/match/v5/matches/" +
-            urlencode(match_id) +
+            urlencode(matchId) +
             "?api_key=" +
             api_key
         );
-      } catch(error){
-        console.log(error);
+        summoner1Match.push(result);
       }
-    });
-    await sleep(1000);
-    const summoner2Match = summoner2MatchList.map(async (match_id) => {
-      try{
-        await axios.get(
+      await sleep(1000);
+      for (const matchId of summoner2MatchList) {
+        let result = await axios.get(
           "https://asia.api.riotgames.com/lol/match/v5/matches/" +
-            urlencode(match_id) +
+            urlencode(matchId) +
             "?api_key=" +
             api_key
         );
-      } catch(error){
-        console.log(error);
+        summoner2Match.push(result);
       }
-    });
-    await sleep(1000);
-    const summoner3Match = summoner3MatchList.map(async (match_id) => {
-      try{
-        await axios.get(
+      await sleep(1000);
+      for (const matchId of summoner3MatchList) {
+        let result = await axios.get(
           "https://asia.api.riotgames.com/lol/match/v5/matches/" +
-            urlencode(match_id) +
+            urlencode(matchId) +
             "?api_key=" +
             api_key
         );
-      } catch(error){
-        console.log(error);
+        summoner3Match.push(result);
       }
-    });
-    await sleep(1000);
-    const summoner4Match = summoner4MatchList.map(async (match_id) => {
-      try{
-        await axios.get(
+      await sleep(1000);
+      for (const matchId of summoner4MatchList) {
+        let result = await axios.get(
           "https://asia.api.riotgames.com/lol/match/v5/matches/" +
-            urlencode(match_id) +
+            urlencode(matchId) +
             "?api_key=" +
             api_key
         );
-      } catch(error){
-        console.log(error);
+        summoner4Match.push(result);
       }
-    });
-    await sleep(1000);
-    const summoner5Match = summoner5MatchList.map(async (match_id) => {
-      try{
-        await axios.get(
+      await sleep(1000);
+      for (const matchId of summoner5MatchList) {
+        let result = await axios.get(
           "https://asia.api.riotgames.com/lol/match/v5/matches/" +
-            urlencode(match_id) +
+            urlencode(matchId) +
             "?api_key=" +
             api_key
         );
-      } catch(error){
-        console.log(error);
+        summoner5Match.push(result);
       }
-    });
+    }
+    await makeSummonerMatch();
+    console.log(summoner1Match, summoner2Match, summoner3Match, summoner4Match, summoner5Match);
 
     const data = {
       id1 : req.query.id1,
