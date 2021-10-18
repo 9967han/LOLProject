@@ -28,14 +28,6 @@ app.use(express.static("public"));
 
 app.get("/search", async (req, res) => {
   // console.log("id2 : " + req.query.id2);
-  const data = {
-    id1 : req.query.id1,
-    id2 : req.query.id2,
-    id3 : req.query.id3,
-    id4 : req.query.id4,
-    id5 : req.query.id5
-  };
-  res.render('form.ejs', data);
   // res.sendFile(__dirname + "/public/form.html");
   const { data: summoner1 } = await axios.get(
     "https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/" +
@@ -69,41 +61,46 @@ app.get("/search", async (req, res) => {
   );
   const summoner1ChampionMastery = await axios.get(
     "https://kr.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/" +
-      summoner1.id +
+      urlencode(summoner1.id) +
       "?api_key=" +
       api_key
   );
   const summoner2ChampionMastery = await axios.get(
     "https://kr.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/" +
-      summoner2.id +
+      urlencode(summoner2.id) +
       "?api_key=" +
       api_key
   );
   const summoner3ChampionMastery = await axios.get(
     "https://kr.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/" +
-      summoner3.id +
+      urlencode(summoner3.id) +
       "?api_key=" +
       api_key
   );
   const summoner4championMastery = await axios.get(
     "https://kr.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/" +
-      summoner4.id +
+      urlencode(summoner4.id) +
       "?api_key=" +
       api_key
   );
   const summoner5ChampionMastery = await axios.get(
     "https://kr.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/" +
-      summoner5.id +
+      urlencode(summoner5.id) +
       "?api_key=" +
       api_key
   );
   const { data: summoner1MatchList } = await axios.get(
     "https://asia.api.riotgames.com/lol/match/v5/matches/by-puuid/" +
-      summoner1.puuid +
+      urlencode(summoner1.puuid) +
       "/ids" +
       "?api_key=" +
       api_key
+  ).catch(
+    error=>{
+      console.log(error);
+    }
   );
+  /*
   const { data: summoner2MatchList } = await axios.get(
     "https://asia.api.riotgames.com/lol/match/v5/matches/by-puuid/" +
       summoner2.puuid +
@@ -131,5 +128,14 @@ app.get("/search", async (req, res) => {
       "/ids" +
       "?api_key=" +
       api_key
-  );
+  );*/
+  const data = {
+    id1 : req.query.id1,
+    id2 : req.query.id2,
+    id3 : req.query.id3,
+    id4 : req.query.id4,
+    id5 : req.query.id5,
+    result : 74
+  };
+  res.render('form.ejs', data);
 });
