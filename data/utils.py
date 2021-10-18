@@ -44,7 +44,7 @@ def init_matchInfo(filename):
     write_data = {}
     write_data['puuid'] = {}
     write_data['encid'] = {}
-    store_data_type = ["largetsKillingSpree", "goldEarned", "timePlayed", "assists", "deaths", "kills", "detectorWardsPlaced", "killingSprees", "wardsKilled", "wardsPlaced", "win", "visionScore", "totalDamageDealtToChampions", "totalDamageTaken", "totalMinionsKilled", "neutralMinionsKilled", "lane"]
+    store_data_type = ["largestKillingSpree", "goldEarned", "timePlayed", "assists", "deaths", "kills", "detectorWardsPlaced", "killingSprees", "wardsKilled", "wardsPlaced", "win", "visionScore", "totalDamageDealtToChampions", "totalDamageTaken", "totalMinionsKilled", "neutralMinionsKilled", "lane", "championId", "individualPosition", "teamPosition"]
     for i in store_data_type:
         write_data[i] = {}
 
