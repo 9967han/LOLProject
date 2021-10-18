@@ -2,9 +2,12 @@
 var express = require("express");
 var axios = require("axios");
 var urlencode = require("urlencode");
+const ejs = require("ejs");
 const api_key = ""; // 여기에 key 입력
 
 var app = express(); // express 함수 실행
+app.set('view engine', 'ejs');
+
 app.listen(3000, function () {
   // 3000포트로 실행하고 대기, 비동기로 인해 나중에 실행됨
   console.log("start! express server port 3000");
@@ -24,8 +27,16 @@ app.get("/main", function (req, res) {
 app.use(express.static("public"));
 
 app.get("/search", async (req, res) => {
-  console.log("id2 : " + req.query.id2);
-  res.sendFile(__dirname + "/public/form.html");
+  // console.log("id2 : " + req.query.id2);
+  const data = {
+    id1 : req.query.id1,
+    id2 : req.query.id2,
+    id3 : req.query.id3,
+    id4 : req.query.id4,
+    id5 : req.query.id5
+  };
+  res.render('form.ejs', data);
+  // res.sendFile(__dirname + "/public/form.html");
   const { data: summoner1 } = await axios.get(
     "https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/" +
       urlencode(req.query.id1) +
