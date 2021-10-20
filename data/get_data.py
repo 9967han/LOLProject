@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import utils
 
-API_KEY = "RGAPI-24680870-7ece-4b42-9918-aa9dd19bcc87"
+API_KEY = ""
 
 url_SummonerName = "https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/{}"
 url_LeagueTier = "https://kr.api.riotgames.com/lol/league/v4/entries/RANKED_SOLO_5x5/{}/{}?page={}"
