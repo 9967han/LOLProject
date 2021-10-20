@@ -1,17 +1,64 @@
 import numpy as np
 
-from data import dataset
-
 import torch
 from torch.utils.data import TensorDataset, DataLoader
-import torch.optim as optim
 import torch.nn.functional as F
 import torch.nn as nn
 
+import sys
+import json
+
+PERFECT = 50
+
+def parse_data(data_list):
+    dataIdx = {}
+    for i, idx in enumerate(["largestKillingSpree", "goldEarned", "timePlayed", "assists", "deaths", "kills", "detectorWardsPlaced", "killingSprees", "wardsKilled", "wardsPlaced", "visionScore", "totalDamageDealtToChampions", "totalDamageTaken", "totalMinionsKilled", "neutralMinionsKilled"]):
+        dataIdx[idx] = i
+    parsed_data = []
+    #print(dataIdx)
+    for data in data_list:
+        one_of_data = []
+        data = data.split(",")
+        data = list(map(float, data))
+        if data[dataIdx["deaths"]] != 0:        
+            kda_of_user = (data[dataIdx["kills"]] + data[dataIdx["assists"]]) / data[dataIdx["deaths"]]
+        else:
+            kda_of_user = PERFECT
+        gold_per_minute = data[dataIdx["goldEarned"]] / (data[dataIdx["timePlayed"]] // 60)
+        damage_dealt_per_minute = data[dataIdx["totalDamageDealtToChampions"]] / (data[dataIdx["timePlayed"]] // 60)
+        damage_taken_per_minute = data[dataIdx["totalDamageTaken"]] / (data[dataIdx["timePlayed"]] // 60)
+        minions_per_minute = (data[dataIdx["totalMinionsKilled"]] + data[dataIdx["neutralMinionsKilled"]]) / (data[dataIdx["timePlayed"]] // 60)
+
+        one_of_data.append(data[dataIdx["largestKillingSpree"]])
+        one_of_data.append(gold_per_minute/100)
+        one_of_data.append(kda_of_user)
+        one_of_data.append(damage_dealt_per_minute/100)
+        one_of_data.append(damage_taken_per_minute/100)
+        one_of_data.append(data[dataIdx["detectorWardsPlaced"]])
+        one_of_data.append(data[dataIdx["killingSprees"]])
+        one_of_data.append(data[dataIdx["wardsKilled"]])
+        one_of_data.append(data[dataIdx["wardsPlaced"]])
+        one_of_data.append(data[dataIdx["visionScore"]])
+        one_of_data.append(minions_per_minute)
+
+        one_of_data.append(0) # 숙련도
+
+        one_of_data = np.array(one_of_data)
+        one_of_data = (one_of_data - one_of_data.mean())/one_of_data.std()
+        one_of_data = list(one_of_data)
+
+        parsed_data.append(one_of_data)
+
+    parsed_data = np.array(parsed_data)
+    return parsed_data
+
 
 if __name__ == "__main__":
+    
+    parsed_data = parse_data(sys.argv[1:])
+    x_tensor = torch.tensor(parsed_data).float()
 
-    test_batch = 128
+    test_batch = 1
 
     model_path = './models/'
     model_name = 'LOLproject.p'
@@ -42,23 +89,13 @@ if __name__ == "__main__":
     )
 
     model.load_state_dict(torch.load(model_path+model_name))
-    test = dataset.Dataset("./data", mode = "test", match_filename = 'MatchInfo_GOLD4.json', user_filename = "UserInfo_GOLD4.json")
-    test_x, test_y = test.data, test.target
-    test_x_tensor = torch.tensor(test_x).float()
-    test_y_tensor = torch.tensor(test_y).float()
-    test_dataset = TensorDataset(test_x_tensor, test_y_tensor)
-    test_loader = DataLoader(test_dataset, batch_size=test_batch)
+    
+    hypothesis = 0
 
-    correct = 0
+    for i in x_tensor:
+        hypothesis += model(i)
+    hypothesis /= 5
 
-    for b, batch_data in enumerate(test_loader):
-        batch_x, batch_y = batch_data
+    #print("Prediction Winning Rate is {:2.2f}%".format(hypothesis * 100))
 
-        hypothesis = model(batch_x)
-
-        prediction = hypothesis >= torch.FloatTensor([0.5])
-        correct_prediction = prediction.float() == batch_y
-        correct += correct_prediction.sum().item()
-    accuracy = correct/len(test_dataset)
-
-    print("Accuracy is {:2.2f}%".format(accuracy * 100))
+    print(str(round(hypothesis.item()*100, 2)))

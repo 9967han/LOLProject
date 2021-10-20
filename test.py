@@ -14,7 +14,6 @@ if __name__ == "__main__":
 
     model_path = './models/'
     model_name = 'LOLproject.p'
-
     model = nn.Sequential(
         nn.Linear(12, 50),
         nn.LeakyReLU(negative_slope = 0.01, inplace = False),
@@ -41,7 +40,7 @@ if __name__ == "__main__":
     )
 
     model.load_state_dict(torch.load(model_path+model_name))
-    test = dataset.Dataset("./data", mode = "test", match_filename = 'MatchInfo_GOLD4.json', user_filename = "UserInfo_GOLD4.json")
+    test = dataset.Dataset("./data", mode = "test", match_filename = 'MatchInfo_SILVER3.json', user_filename = "UserInfo_SILVER3.json")
     test_x, test_y = test.data, test.target
     test_x_tensor = torch.tensor(test_x).float()
     test_y_tensor = torch.tensor(test_y).float()
