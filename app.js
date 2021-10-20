@@ -164,7 +164,8 @@ app.get("/search", async (req, res) => {
             api_key
         );
         if (result.info.queueId == 420 || result.info.queueId == 440) {
-          result = result.info.participants;
+          resultIdx = result.metadata.participants.indexOf(summoner2.puuid);
+          result = result.info.participants[resultIdx];
           summoner2Match.push(result);
         }
       }
@@ -177,7 +178,8 @@ app.get("/search", async (req, res) => {
             api_key
         );
         if (result.info.queueId == 420 || result.info.queueId == 440) {
-          result = result.info.participants;
+          resultIdx = result.metadata.participants.indexOf(summoner3.puuid);
+          result = result.info.participants[resultIdx];
           summoner3Match.push(result);
         }
       }
@@ -190,7 +192,8 @@ app.get("/search", async (req, res) => {
             api_key
         );
         if (result.info.queueId == 420 || result.info.queueId == 440) {
-          result = result.info.participants;
+          resultIdx = result.metadata.participants.indexOf(summoner4.puuid);
+          result = result.info.participants[resultIdx];
           summoner4Match.push(result);
         }
       }
@@ -203,47 +206,59 @@ app.get("/search", async (req, res) => {
             api_key
         );
         if (result.info.queueId == 420 || result.info.queueId == 440) {
-          result = result.info.participants;
+          resultIdx = result.metadata.participants.indexOf(summoner5.puuid);
+          result = result.info.participants[resultIdx];
           summoner5Match.push(result);
         }
       }
     }
     await makeSummonerMatch();
 
-    const infoArr = ["largestKillingSpree", "goldEarned", "timePlayed", "assists", "deaths", "kills", "detectorWardsPlaced", "killingSprees", "wardsKilled", "wardsPlaced", "visionScore", "totalDamageDealtToChampions", "totalDamageTaken", "totalMinionsKilled", "neutralMinionsKilled"];
+    var infoArr = ["largestKillingSpree", "goldEarned", "timePlayed", "assists", "deaths", "kills", "detectorWardsPlaced", "killingSprees", "wardsKilled", "wardsPlaced", "visionScore", "totalDamageDealtToChampions", "totalDamageTaken", "totalMinionsKilled", "neutralMinionsKilled"];
     var player1Idx = 0, player2Idx = 0, player3Idx = 0, player4Idx = 0, player5Idx = 0;
-    for(const match of summoner1Match){
-      for(const info of infoArr){
+    var player1Cnt = 0, player2Cnt = 0, player3Cnt = 0, player4Cnt = 0, player5Cnt = 0;
+    for(var match of summoner1Match){
+      player1Idx = 0;
+      player1Cnt++;
+      for(var info of infoArr){
         player1Data[player1Idx++] += parseInt(match[info]);
       }
     }
-    for(const match of summoner2Match){
-      for(const info of infoArr){
+    for(var match of summoner2Match){
+      player2Idx = 0;
+      player2Cnt++;
+      for(var info of infoArr){
         player2Data[player2Idx++] += parseInt(match[info]);
       }
     }
-    for(const match of summoner3Match){
-      for(const info of infoArr){
+    for(var match of summoner3Match){
+      player3Idx = 0;
+      player3Cnt++;
+      for(var info of infoArr){
         player3Data[player3Idx++] += parseInt(match[info]);
       }
     }
-    for(const match of summoner4Match){
-      for(const info of infoArr){
+    for(var match of summoner4Match){
+      player4Idx = 0;
+      player4Cnt++;
+      for(var info of infoArr){
         player4Data[player4Idx++] += parseInt(match[info]);
       }
     }
-    for(const match of summoner5Match){
-      for(const info of infoArr){
+    for(var match of summoner5Match){
+      player5Idx = 0;
+      player5Cnt++;
+      for(var info of infoArr){
         player5Data[player5Idx++] += parseInt(match[info]);
       }
     }
-
+    console.log(player2Data)
     for(var i=0; i<infoArr.length; i++){
-      player1Data[i] /= player1Idx;
-      player2Data[i] /= player2Idx;
-      player3Data[i] /= player3Idx;
-      player4Data[i] /= player4Idx;
-      player5Data[i] /= player5Idx;
+      player1Data[i] /= player1Cnt;
+      player2Data[i] /= player2Cnt;
+      player3Data[i] /= player3Cnt;
+      player4Data[i] /= player4Cnt;
+      player5Data[i] /= player5Cnt;
     }
 
     var options = {
