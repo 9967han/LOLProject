@@ -65,37 +65,37 @@ app.get("/search", async (req, res) => {
         urlencode(req.query.id5) +
         "?api_key=" +
         api_key
-    );/*
-    const summoner1ChampionMastery = await axios.get(
+    );
+    const {data : summoner1ChampionMastery} = await axios.get(
       "https://kr.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/" +
         urlencode(summoner1.id) +
         "?api_key=" +
         api_key
     );
-    const summoner2ChampionMastery = await axios.get(
+    const {data : summoner2ChampionMastery} = await axios.get(
       "https://kr.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/" +
         urlencode(summoner2.id) +
         "?api_key=" +
         api_key
     );
-    const summoner3ChampionMastery = await axios.get(
+    const {data : summoner3ChampionMastery} = await axios.get(
       "https://kr.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/" +
         urlencode(summoner3.id) +
         "?api_key=" +
         api_key
     );
-    const summoner4championMastery = await axios.get(
+    const {data : summoner4ChampionMastery} = await axios.get(
       "https://kr.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/" +
         urlencode(summoner4.id) +
         "?api_key=" +
         api_key
     );
-    const summoner5ChampionMastery = await axios.get(
+    const {data : summoner5ChampionMastery} = await axios.get(
       "https://kr.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/" +
         urlencode(summoner5.id) +
         "?api_key=" +
         api_key
-    );*/
+    );
     await sleep(1000);
     const { data: summoner1MatchList } = await axios.get(
       "https://asia.api.riotgames.com/lol/match/v5/matches/by-puuid/" +
@@ -220,6 +220,11 @@ app.get("/search", async (req, res) => {
     for(var match of summoner1Match){
       player1Idx = 0;
       player1Cnt++;
+      for(const champion of summoner1ChampionMastery){
+        if(champion["championId"] == match["championId"]){
+          player1Data[15] += champion["championPoints"];
+        }
+      }
       for(var info of infoArr){
         player1Data[player1Idx++] += parseInt(match[info]);
       }
@@ -227,6 +232,11 @@ app.get("/search", async (req, res) => {
     for(var match of summoner2Match){
       player2Idx = 0;
       player2Cnt++;
+      for(const champion of summoner2ChampionMastery){
+        if(champion["championId"] == match["championId"]){
+          player2Data[15] += champion["championPoints"];
+        }
+      }
       for(var info of infoArr){
         player2Data[player2Idx++] += parseInt(match[info]);
       }
@@ -234,6 +244,11 @@ app.get("/search", async (req, res) => {
     for(var match of summoner3Match){
       player3Idx = 0;
       player3Cnt++;
+      for(const champion of summoner3ChampionMastery){
+        if(champion["championId"] == match["championId"]){
+          player3Data[15] += champion["championPoints"];
+        }
+      }
       for(var info of infoArr){
         player3Data[player3Idx++] += parseInt(match[info]);
       }
@@ -241,6 +256,11 @@ app.get("/search", async (req, res) => {
     for(var match of summoner4Match){
       player4Idx = 0;
       player4Cnt++;
+      for(const champion of summoner4ChampionMastery){
+        if(champion["championId"] == match["championId"]){
+          player4Data[15] += champion["championPoints"];
+        }
+      }
       for(var info of infoArr){
         player4Data[player4Idx++] += parseInt(match[info]);
       }
@@ -248,12 +268,22 @@ app.get("/search", async (req, res) => {
     for(var match of summoner5Match){
       player5Idx = 0;
       player5Cnt++;
+      for(const champion of summoner5ChampionMastery){
+        if(champion["championId"] == match["championId"]){
+          player5Data[15] += champion["championPoints"];
+        }
+      }
       for(var info of infoArr){
         player5Data[player5Idx++] += parseInt(match[info]);
       }
     }
-    console.log(player2Data)
-    for(var i=0; i<infoArr.length; i++){
+    if(player1Cnt == 0) player1Cnt = 1;
+    if(player2Cnt == 0) player2Cnt = 1;
+    if(player3Cnt == 0) player3Cnt = 1;
+    if(player4Cnt == 0) player4Cnt = 1;
+    if(player5Cnt == 0) player5Cnt = 1;
+
+    for(var i=0; i<=infoArr.length; i++){
       player1Data[i] /= player1Cnt;
       player2Data[i] /= player2Cnt;
       player3Data[i] /= player3Cnt;
