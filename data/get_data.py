@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import utils
 
-API_KEY = ""
+API_KEY = "RGAPI-24680870-7ece-4b42-9918-aa9dd19bcc87"
 
 url_SummonerName = "https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/{}"
 url_LeagueTier = "https://kr.api.riotgames.com/lol/league/v4/entries/RANKED_SOLO_5x5/{}/{}?page={}"
@@ -53,16 +53,21 @@ class Request_Info:
 
 def init_data():
     utils.champion_info()
-    utils.init_userInfo('UserInfo_GOLD4.json')
-    utils.init_matchInfo('MatchInfo_GOLD4.json')
+    utils.init_userInfo('UserInfo_SILVER3.json')
+    utils.init_matchInfo('MatchInfo_SILVER3.json')
 
 
 if __name__=="__main__":
     init_data()
     print("Step 0 : Get Summoners list by tier")
-    param = ["GOLD", "IV", 1]
-    request_info = Request_Info(method = "None", param = param)
-    data = request_info.get_LeagueTier()
+    data = []
+    for i in range(1, 11, 1):
+        param = ["SILVER", "III", i]
+        request_info = Request_Info(method = "None", param = param)
+        if data == []:
+            data = request_info.get_LeagueTier()
+        else:
+            data += request_info.get_LeagueTier()
 
     summonerName_list = []
     for i in data:
@@ -73,20 +78,20 @@ if __name__=="__main__":
     for name in summonerName_list:
         data = Request_Info(method = "None", param = name)
         data_name = data.get_SummonerName()
-        # sleep 10 for gather data properly
-        time.sleep(1)
+        # sleep 1 for gather data properly
+        time.sleep(0.8)
         if 'puuid' in data_name:
             summoner_puuid[name] = data_name['puuid']
             summoner_encid[name] = data_name['id']
         # Erase below 2 line (Just for debuging)
-        if len(summoner_puuid) >= 10:
-            break
+        #if len(summoner_puuid) >= 10:
+            #break
     
     print("Step 2 : Get Summoers info and store....")
     print(len(summonerName_list), len(summoner_puuid), len(summoner_encid))
 
     #UserInfo store filename 
-    filename = "UserInfo_GOLD4.json"
+    filename = "UserInfo_SILVER3.json"
     with open(filename, 'r') as f:
         file_data = json.load(f)
     
@@ -101,6 +106,8 @@ if __name__=="__main__":
         summonerChamp = Request_Info(method = "None", param = encid)
         summonerChamp_data = summonerChamp.get_SummonerChamp()
         for info in summonerChamp_data:
+            if "championId" not in info:
+                continue
             champ_id = str(info["championId"])
             champ_points = info["championPoints"]
             #champ_level = info["championLevel"]
@@ -112,32 +119,35 @@ if __name__=="__main__":
                     file_data[champ_id][cnt] = 0
 
         summoner_Champ[name] = summonerChamp_data
-        # sleep 10 for gather data properly
-        time.sleep(1)
+        # sleep 1 for gather data properly
+        time.sleep(0.8)
         cnt += 1
     
     with open(filename, 'w', encoding='utf-8') as make_file:
         json.dump(file_data, make_file, ensure_ascii=False, indent='\t')
 
     print("Step 3 : Get Match Data by each Summoner...")
-    filename = "MatchInfo_GOLD4.json"
+    filename = "MatchInfo_SILVER3.json"
     cnt = 1
     past_cnt = 0
     with open(filename, 'r') as read_f:
         match_info = json.load(read_f)
-
+    with open("champion_data.json", 'r') as champion_data_f:
+        champion_data_info = json.load(champion_data_f)
     #store_data_type = ["largetsKillingSpree", "goldEarned", "timePlayed", "assists", "deaths", "kills", "detectorWardPlaced", "killingSprees", "wardsKilled", "wardsPlaced", "win", "visinoScore", "totalDamageDealtToChampions", "totalDamageTaken", "totalMinionsKilled", "neutralMinionsKilled", "lane"]
     for name in summoner_puuid:
         puuid = summoner_puuid[name]
-        # sleep 10 for gather data properly
-        time.sleep(1)
+        # sleep 1 for gather data properly
+        time.sleep(0.8)
         request_info = Request_Info(method = "None", param = puuid)
         data = request_info.get_MatchBySummoner()
         past_cnt = cnt
         print("current counted games : {}".format(past_cnt))
+        if(past_cnt >= 5001):
+            break
         for single_game in data:
-            # sleep 10 for gather data properly
-            time.sleep(1)
+            # sleep 1 for gather data properly
+            time.sleep(0.8)
             match_data_request = Request_Info(method="None", param = single_game)
             match_data = match_data_request.get_MatchData()
             if "status" in match_data:
@@ -151,13 +161,22 @@ if __name__=="__main__":
             puuid_data = puuid_data[puuid_loc]
             for i in puuid_data:
                 if i in match_info:
-                    match_info[i][cnt] = puuid_data[i]
+                    if i == "championName":
+                        match_info[i][cnt] = puuid_data[i].lower()
+                        championId = champion_data_info[puuid_data[i].lower()]["championId"]
+                        match_info["championId"][cnt] = championId
+                    elif i == "championId":
+                        continue
+                    else:
+                        match_info[i][cnt] = puuid_data[i]
                 elif i == "summonerId":
                     match_info["encid"][cnt] = puuid_data[i]
             cnt += 1
             if cnt - past_cnt == 20:
                 break
-        
+            if cnt >= 5001:
+                break
+    print("Toal num : ", len(match_info["encid"]))
     with open(filename, 'w', encoding='utf-8') as make_file:
         json.dump(match_info, make_file, ensure_ascii=False, indent='\t')
 

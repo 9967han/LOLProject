@@ -1,0 +1,2043 @@
+{
+	"aatrox": {
+		"championName": "Aatrox",
+		"championId": "266",
+		"championImage": {
+			"full": "Aatrox.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 0,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"ahri": {
+		"championName": "Ahri",
+		"championId": "103",
+		"championImage": {
+			"full": "Ahri.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 48,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"akali": {
+		"championName": "Akali",
+		"championId": "84",
+		"championImage": {
+			"full": "Akali.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 96,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"akshan": {
+		"championName": "Akshan",
+		"championId": "166",
+		"championImage": {
+			"full": "Akshan.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 144,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"alistar": {
+		"championName": "Alistar",
+		"championId": "12",
+		"championImage": {
+			"full": "Alistar.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 192,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"amumu": {
+		"championName": "Amumu",
+		"championId": "32",
+		"championImage": {
+			"full": "Amumu.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 240,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"anivia": {
+		"championName": "Anivia",
+		"championId": "34",
+		"championImage": {
+			"full": "Anivia.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 288,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"annie": {
+		"championName": "Annie",
+		"championId": "1",
+		"championImage": {
+			"full": "Annie.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 336,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"aphelios": {
+		"championName": "Aphelios",
+		"championId": "523",
+		"championImage": {
+			"full": "Aphelios.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 384,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"ashe": {
+		"championName": "Ashe",
+		"championId": "22",
+		"championImage": {
+			"full": "Ashe.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 432,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"aurelionsol": {
+		"championName": "AurelionSol",
+		"championId": "136",
+		"championImage": {
+			"full": "AurelionSol.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 0,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"azir": {
+		"championName": "Azir",
+		"championId": "268",
+		"championImage": {
+			"full": "Azir.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 48,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"bard": {
+		"championName": "Bard",
+		"championId": "432",
+		"championImage": {
+			"full": "Bard.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 96,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"blitzcrank": {
+		"championName": "Blitzcrank",
+		"championId": "53",
+		"championImage": {
+			"full": "Blitzcrank.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 144,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"brand": {
+		"championName": "Brand",
+		"championId": "63",
+		"championImage": {
+			"full": "Brand.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 192,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"braum": {
+		"championName": "Braum",
+		"championId": "201",
+		"championImage": {
+			"full": "Braum.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 240,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"caitlyn": {
+		"championName": "Caitlyn",
+		"championId": "51",
+		"championImage": {
+			"full": "Caitlyn.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 288,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"camille": {
+		"championName": "Camille",
+		"championId": "164",
+		"championImage": {
+			"full": "Camille.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 336,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"cassiopeia": {
+		"championName": "Cassiopeia",
+		"championId": "69",
+		"championImage": {
+			"full": "Cassiopeia.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 384,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"chogath": {
+		"championName": "Chogath",
+		"championId": "31",
+		"championImage": {
+			"full": "Chogath.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 432,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"corki": {
+		"championName": "Corki",
+		"championId": "42",
+		"championImage": {
+			"full": "Corki.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 0,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"darius": {
+		"championName": "Darius",
+		"championId": "122",
+		"championImage": {
+			"full": "Darius.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 48,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"diana": {
+		"championName": "Diana",
+		"championId": "131",
+		"championImage": {
+			"full": "Diana.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 96,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"draven": {
+		"championName": "Draven",
+		"championId": "119",
+		"championImage": {
+			"full": "Draven.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 144,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"drmundo": {
+		"championName": "DrMundo",
+		"championId": "36",
+		"championImage": {
+			"full": "DrMundo.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 192,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"ekko": {
+		"championName": "Ekko",
+		"championId": "245",
+		"championImage": {
+			"full": "Ekko.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 240,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"elise": {
+		"championName": "Elise",
+		"championId": "60",
+		"championImage": {
+			"full": "Elise.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 288,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"evelynn": {
+		"championName": "Evelynn",
+		"championId": "28",
+		"championImage": {
+			"full": "Evelynn.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 336,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"ezreal": {
+		"championName": "Ezreal",
+		"championId": "81",
+		"championImage": {
+			"full": "Ezreal.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 384,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"fiddlesticks": {
+		"championName": "Fiddlesticks",
+		"championId": "9",
+		"championImage": {
+			"full": "Fiddlesticks.png",
+			"sprite": "champion0.png",
+			"group": "champion",
+			"x": 432,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"fiora": {
+		"championName": "Fiora",
+		"championId": "114",
+		"championImage": {
+			"full": "Fiora.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 0,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"fizz": {
+		"championName": "Fizz",
+		"championId": "105",
+		"championImage": {
+			"full": "Fizz.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 48,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"galio": {
+		"championName": "Galio",
+		"championId": "3",
+		"championImage": {
+			"full": "Galio.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 96,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"gangplank": {
+		"championName": "Gangplank",
+		"championId": "41",
+		"championImage": {
+			"full": "Gangplank.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 144,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"garen": {
+		"championName": "Garen",
+		"championId": "86",
+		"championImage": {
+			"full": "Garen.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 192,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"gnar": {
+		"championName": "Gnar",
+		"championId": "150",
+		"championImage": {
+			"full": "Gnar.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 240,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"gragas": {
+		"championName": "Gragas",
+		"championId": "79",
+		"championImage": {
+			"full": "Gragas.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 288,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"graves": {
+		"championName": "Graves",
+		"championId": "104",
+		"championImage": {
+			"full": "Graves.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 336,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"gwen": {
+		"championName": "Gwen",
+		"championId": "887",
+		"championImage": {
+			"full": "Gwen.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 384,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"hecarim": {
+		"championName": "Hecarim",
+		"championId": "120",
+		"championImage": {
+			"full": "Hecarim.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 432,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"heimerdinger": {
+		"championName": "Heimerdinger",
+		"championId": "74",
+		"championImage": {
+			"full": "Heimerdinger.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 0,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"illaoi": {
+		"championName": "Illaoi",
+		"championId": "420",
+		"championImage": {
+			"full": "Illaoi.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 48,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"irelia": {
+		"championName": "Irelia",
+		"championId": "39",
+		"championImage": {
+			"full": "Irelia.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 96,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"ivern": {
+		"championName": "Ivern",
+		"championId": "427",
+		"championImage": {
+			"full": "Ivern.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 144,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"janna": {
+		"championName": "Janna",
+		"championId": "40",
+		"championImage": {
+			"full": "Janna.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 192,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"jarvaniv": {
+		"championName": "JarvanIV",
+		"championId": "59",
+		"championImage": {
+			"full": "JarvanIV.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 240,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"jax": {
+		"championName": "Jax",
+		"championId": "24",
+		"championImage": {
+			"full": "Jax.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 288,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"jayce": {
+		"championName": "Jayce",
+		"championId": "126",
+		"championImage": {
+			"full": "Jayce.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 336,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"jhin": {
+		"championName": "Jhin",
+		"championId": "202",
+		"championImage": {
+			"full": "Jhin.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 384,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"jinx": {
+		"championName": "Jinx",
+		"championId": "222",
+		"championImage": {
+			"full": "Jinx.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 432,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"kaisa": {
+		"championName": "Kaisa",
+		"championId": "145",
+		"championImage": {
+			"full": "Kaisa.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 0,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"kalista": {
+		"championName": "Kalista",
+		"championId": "429",
+		"championImage": {
+			"full": "Kalista.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 48,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"karma": {
+		"championName": "Karma",
+		"championId": "43",
+		"championImage": {
+			"full": "Karma.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 96,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"karthus": {
+		"championName": "Karthus",
+		"championId": "30",
+		"championImage": {
+			"full": "Karthus.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 144,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"kassadin": {
+		"championName": "Kassadin",
+		"championId": "38",
+		"championImage": {
+			"full": "Kassadin.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 192,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"katarina": {
+		"championName": "Katarina",
+		"championId": "55",
+		"championImage": {
+			"full": "Katarina.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 240,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"kayle": {
+		"championName": "Kayle",
+		"championId": "10",
+		"championImage": {
+			"full": "Kayle.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 288,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"kayn": {
+		"championName": "Kayn",
+		"championId": "141",
+		"championImage": {
+			"full": "Kayn.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 336,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"kennen": {
+		"championName": "Kennen",
+		"championId": "85",
+		"championImage": {
+			"full": "Kennen.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 384,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"khazix": {
+		"championName": "Khazix",
+		"championId": "121",
+		"championImage": {
+			"full": "Khazix.png",
+			"sprite": "champion1.png",
+			"group": "champion",
+			"x": 432,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"kindred": {
+		"championName": "Kindred",
+		"championId": "203",
+		"championImage": {
+			"full": "Kindred.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 0,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"kled": {
+		"championName": "Kled",
+		"championId": "240",
+		"championImage": {
+			"full": "Kled.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 48,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"kogmaw": {
+		"championName": "KogMaw",
+		"championId": "96",
+		"championImage": {
+			"full": "KogMaw.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 96,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"leblanc": {
+		"championName": "Leblanc",
+		"championId": "7",
+		"championImage": {
+			"full": "Leblanc.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 144,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"leesin": {
+		"championName": "LeeSin",
+		"championId": "64",
+		"championImage": {
+			"full": "LeeSin.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 192,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"leona": {
+		"championName": "Leona",
+		"championId": "89",
+		"championImage": {
+			"full": "Leona.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 240,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"lillia": {
+		"championName": "Lillia",
+		"championId": "876",
+		"championImage": {
+			"full": "Lillia.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 288,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"lissandra": {
+		"championName": "Lissandra",
+		"championId": "127",
+		"championImage": {
+			"full": "Lissandra.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 336,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"lucian": {
+		"championName": "Lucian",
+		"championId": "236",
+		"championImage": {
+			"full": "Lucian.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 384,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"lulu": {
+		"championName": "Lulu",
+		"championId": "117",
+		"championImage": {
+			"full": "Lulu.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 432,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"lux": {
+		"championName": "Lux",
+		"championId": "99",
+		"championImage": {
+			"full": "Lux.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 0,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"malphite": {
+		"championName": "Malphite",
+		"championId": "54",
+		"championImage": {
+			"full": "Malphite.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 48,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"malzahar": {
+		"championName": "Malzahar",
+		"championId": "90",
+		"championImage": {
+			"full": "Malzahar.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 96,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"maokai": {
+		"championName": "Maokai",
+		"championId": "57",
+		"championImage": {
+			"full": "Maokai.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 144,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"masteryi": {
+		"championName": "MasterYi",
+		"championId": "11",
+		"championImage": {
+			"full": "MasterYi.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 192,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"missfortune": {
+		"championName": "MissFortune",
+		"championId": "21",
+		"championImage": {
+			"full": "MissFortune.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 240,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"monkeyking": {
+		"championName": "MonkeyKing",
+		"championId": "62",
+		"championImage": {
+			"full": "MonkeyKing.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 288,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"mordekaiser": {
+		"championName": "Mordekaiser",
+		"championId": "82",
+		"championImage": {
+			"full": "Mordekaiser.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 336,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"morgana": {
+		"championName": "Morgana",
+		"championId": "25",
+		"championImage": {
+			"full": "Morgana.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 384,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"nami": {
+		"championName": "Nami",
+		"championId": "267",
+		"championImage": {
+			"full": "Nami.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 432,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"nasus": {
+		"championName": "Nasus",
+		"championId": "75",
+		"championImage": {
+			"full": "Nasus.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 0,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"nautilus": {
+		"championName": "Nautilus",
+		"championId": "111",
+		"championImage": {
+			"full": "Nautilus.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 48,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"neeko": {
+		"championName": "Neeko",
+		"championId": "518",
+		"championImage": {
+			"full": "Neeko.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 96,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"nidalee": {
+		"championName": "Nidalee",
+		"championId": "76",
+		"championImage": {
+			"full": "Nidalee.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 144,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"nocturne": {
+		"championName": "Nocturne",
+		"championId": "56",
+		"championImage": {
+			"full": "Nocturne.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 192,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"nunu": {
+		"championName": "Nunu",
+		"championId": "20",
+		"championImage": {
+			"full": "Nunu.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 240,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"olaf": {
+		"championName": "Olaf",
+		"championId": "2",
+		"championImage": {
+			"full": "Olaf.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 288,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"orianna": {
+		"championName": "Orianna",
+		"championId": "61",
+		"championImage": {
+			"full": "Orianna.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 336,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"ornn": {
+		"championName": "Ornn",
+		"championId": "516",
+		"championImage": {
+			"full": "Ornn.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 384,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"pantheon": {
+		"championName": "Pantheon",
+		"championId": "80",
+		"championImage": {
+			"full": "Pantheon.png",
+			"sprite": "champion2.png",
+			"group": "champion",
+			"x": 432,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"poppy": {
+		"championName": "Poppy",
+		"championId": "78",
+		"championImage": {
+			"full": "Poppy.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 0,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"pyke": {
+		"championName": "Pyke",
+		"championId": "555",
+		"championImage": {
+			"full": "Pyke.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 48,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"qiyana": {
+		"championName": "Qiyana",
+		"championId": "246",
+		"championImage": {
+			"full": "Qiyana.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 96,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"quinn": {
+		"championName": "Quinn",
+		"championId": "133",
+		"championImage": {
+			"full": "Quinn.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 144,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"rakan": {
+		"championName": "Rakan",
+		"championId": "497",
+		"championImage": {
+			"full": "Rakan.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 192,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"rammus": {
+		"championName": "Rammus",
+		"championId": "33",
+		"championImage": {
+			"full": "Rammus.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 240,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"reksai": {
+		"championName": "RekSai",
+		"championId": "421",
+		"championImage": {
+			"full": "RekSai.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 288,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"rell": {
+		"championName": "Rell",
+		"championId": "526",
+		"championImage": {
+			"full": "Rell.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 336,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"renekton": {
+		"championName": "Renekton",
+		"championId": "58",
+		"championImage": {
+			"full": "Renekton.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 384,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"rengar": {
+		"championName": "Rengar",
+		"championId": "107",
+		"championImage": {
+			"full": "Rengar.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 432,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"riven": {
+		"championName": "Riven",
+		"championId": "92",
+		"championImage": {
+			"full": "Riven.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 0,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"rumble": {
+		"championName": "Rumble",
+		"championId": "68",
+		"championImage": {
+			"full": "Rumble.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 48,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"ryze": {
+		"championName": "Ryze",
+		"championId": "13",
+		"championImage": {
+			"full": "Ryze.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 96,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"samira": {
+		"championName": "Samira",
+		"championId": "360",
+		"championImage": {
+			"full": "Samira.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 144,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"sejuani": {
+		"championName": "Sejuani",
+		"championId": "113",
+		"championImage": {
+			"full": "Sejuani.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 192,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"senna": {
+		"championName": "Senna",
+		"championId": "235",
+		"championImage": {
+			"full": "Senna.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 240,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"seraphine": {
+		"championName": "Seraphine",
+		"championId": "147",
+		"championImage": {
+			"full": "Seraphine.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 288,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"sett": {
+		"championName": "Sett",
+		"championId": "875",
+		"championImage": {
+			"full": "Sett.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 336,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"shaco": {
+		"championName": "Shaco",
+		"championId": "35",
+		"championImage": {
+			"full": "Shaco.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 384,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"shen": {
+		"championName": "Shen",
+		"championId": "98",
+		"championImage": {
+			"full": "Shen.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 432,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"shyvana": {
+		"championName": "Shyvana",
+		"championId": "102",
+		"championImage": {
+			"full": "Shyvana.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 0,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"singed": {
+		"championName": "Singed",
+		"championId": "27",
+		"championImage": {
+			"full": "Singed.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 48,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"sion": {
+		"championName": "Sion",
+		"championId": "14",
+		"championImage": {
+			"full": "Sion.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 96,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"sivir": {
+		"championName": "Sivir",
+		"championId": "15",
+		"championImage": {
+			"full": "Sivir.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 144,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"skarner": {
+		"championName": "Skarner",
+		"championId": "72",
+		"championImage": {
+			"full": "Skarner.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 192,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"sona": {
+		"championName": "Sona",
+		"championId": "37",
+		"championImage": {
+			"full": "Sona.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 240,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"soraka": {
+		"championName": "Soraka",
+		"championId": "16",
+		"championImage": {
+			"full": "Soraka.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 288,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"swain": {
+		"championName": "Swain",
+		"championId": "50",
+		"championImage": {
+			"full": "Swain.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 336,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"sylas": {
+		"championName": "Sylas",
+		"championId": "517",
+		"championImage": {
+			"full": "Sylas.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 384,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"syndra": {
+		"championName": "Syndra",
+		"championId": "134",
+		"championImage": {
+			"full": "Syndra.png",
+			"sprite": "champion3.png",
+			"group": "champion",
+			"x": 432,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"tahmkench": {
+		"championName": "TahmKench",
+		"championId": "223",
+		"championImage": {
+			"full": "TahmKench.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 0,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"taliyah": {
+		"championName": "Taliyah",
+		"championId": "163",
+		"championImage": {
+			"full": "Taliyah.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 48,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"talon": {
+		"championName": "Talon",
+		"championId": "91",
+		"championImage": {
+			"full": "Talon.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 96,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"taric": {
+		"championName": "Taric",
+		"championId": "44",
+		"championImage": {
+			"full": "Taric.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 144,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"teemo": {
+		"championName": "Teemo",
+		"championId": "17",
+		"championImage": {
+			"full": "Teemo.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 192,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"thresh": {
+		"championName": "Thresh",
+		"championId": "412",
+		"championImage": {
+			"full": "Thresh.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 240,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"tristana": {
+		"championName": "Tristana",
+		"championId": "18",
+		"championImage": {
+			"full": "Tristana.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 288,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"trundle": {
+		"championName": "Trundle",
+		"championId": "48",
+		"championImage": {
+			"full": "Trundle.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 336,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"tryndamere": {
+		"championName": "Tryndamere",
+		"championId": "23",
+		"championImage": {
+			"full": "Tryndamere.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 384,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"twistedfate": {
+		"championName": "TwistedFate",
+		"championId": "4",
+		"championImage": {
+			"full": "TwistedFate.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 432,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"twitch": {
+		"championName": "Twitch",
+		"championId": "29",
+		"championImage": {
+			"full": "Twitch.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 0,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"udyr": {
+		"championName": "Udyr",
+		"championId": "77",
+		"championImage": {
+			"full": "Udyr.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 48,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"urgot": {
+		"championName": "Urgot",
+		"championId": "6",
+		"championImage": {
+			"full": "Urgot.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 96,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"varus": {
+		"championName": "Varus",
+		"championId": "110",
+		"championImage": {
+			"full": "Varus.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 144,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"vayne": {
+		"championName": "Vayne",
+		"championId": "67",
+		"championImage": {
+			"full": "Vayne.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 192,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"veigar": {
+		"championName": "Veigar",
+		"championId": "45",
+		"championImage": {
+			"full": "Veigar.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 240,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"velkoz": {
+		"championName": "Velkoz",
+		"championId": "161",
+		"championImage": {
+			"full": "Velkoz.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 288,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"vex": {
+		"championName": "Vex",
+		"championId": "711",
+		"championImage": {
+			"full": "Vex.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 336,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"vi": {
+		"championName": "Vi",
+		"championId": "254",
+		"championImage": {
+			"full": "Vi.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 384,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"viego": {
+		"championName": "Viego",
+		"championId": "234",
+		"championImage": {
+			"full": "Viego.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 432,
+			"y": 48,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"viktor": {
+		"championName": "Viktor",
+		"championId": "112",
+		"championImage": {
+			"full": "Viktor.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 0,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"vladimir": {
+		"championName": "Vladimir",
+		"championId": "8",
+		"championImage": {
+			"full": "Vladimir.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 48,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"volibear": {
+		"championName": "Volibear",
+		"championId": "106",
+		"championImage": {
+			"full": "Volibear.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 96,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"warwick": {
+		"championName": "Warwick",
+		"championId": "19",
+		"championImage": {
+			"full": "Warwick.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 144,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"xayah": {
+		"championName": "Xayah",
+		"championId": "498",
+		"championImage": {
+			"full": "Xayah.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 192,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"xerath": {
+		"championName": "Xerath",
+		"championId": "101",
+		"championImage": {
+			"full": "Xerath.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 240,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"xinzhao": {
+		"championName": "XinZhao",
+		"championId": "5",
+		"championImage": {
+			"full": "XinZhao.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 288,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"yasuo": {
+		"championName": "Yasuo",
+		"championId": "157",
+		"championImage": {
+			"full": "Yasuo.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 336,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"yone": {
+		"championName": "Yone",
+		"championId": "777",
+		"championImage": {
+			"full": "Yone.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 384,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"yorick": {
+		"championName": "Yorick",
+		"championId": "83",
+		"championImage": {
+			"full": "Yorick.png",
+			"sprite": "champion4.png",
+			"group": "champion",
+			"x": 432,
+			"y": 96,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"yuumi": {
+		"championName": "Yuumi",
+		"championId": "350",
+		"championImage": {
+			"full": "Yuumi.png",
+			"sprite": "champion5.png",
+			"group": "champion",
+			"x": 0,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"zac": {
+		"championName": "Zac",
+		"championId": "154",
+		"championImage": {
+			"full": "Zac.png",
+			"sprite": "champion5.png",
+			"group": "champion",
+			"x": 48,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"zed": {
+		"championName": "Zed",
+		"championId": "238",
+		"championImage": {
+			"full": "Zed.png",
+			"sprite": "champion5.png",
+			"group": "champion",
+			"x": 96,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"ziggs": {
+		"championName": "Ziggs",
+		"championId": "115",
+		"championImage": {
+			"full": "Ziggs.png",
+			"sprite": "champion5.png",
+			"group": "champion",
+			"x": 144,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"zilean": {
+		"championName": "Zilean",
+		"championId": "26",
+		"championImage": {
+			"full": "Zilean.png",
+			"sprite": "champion5.png",
+			"group": "champion",
+			"x": 192,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"zoe": {
+		"championName": "Zoe",
+		"championId": "142",
+		"championImage": {
+			"full": "Zoe.png",
+			"sprite": "champion5.png",
+			"group": "champion",
+			"x": 240,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	},
+	"zyra": {
+		"championName": "Zyra",
+		"championId": "143",
+		"championImage": {
+			"full": "Zyra.png",
+			"sprite": "champion5.png",
+			"group": "champion",
+			"x": 288,
+			"y": 0,
+			"w": 48,
+			"h": 48
+		}
+	}
+}
