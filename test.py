@@ -26,7 +26,7 @@ if __name__ == "__main__":
     )
 
     model.load_state_dict(torch.load(model_path+model_name))
-    test = dataset.Dataset("./data", mode = "test", match_filename = 'MatchInfo_SILVER1.json', user_filename = "UserInfo_SILVER1.json")
+    test = dataset.Dataset("./data", mode = "test", match_filename = 'Test_MatchInfo.json', user_filename = "Test_UserInfo.json")
     test_x, test_y = test.data, test.target
     test_x_tensor = torch.tensor(test_x).float()
     test_y_tensor = torch.tensor(test_y).float()
