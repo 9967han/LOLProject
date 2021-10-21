@@ -12,13 +12,11 @@ class Dataset():
 		user_filename,
 		valid_ratio = 0,
 		shuffle = False,
-		transform = None,
 		**kwargs
 	):
 
 		super().__init__()
 		self.root = root
-		self.transform = transform
 		self.mode = mode
 		self.valid_ratio = valid_ratio
 		self.shuffle = shuffle
@@ -98,7 +96,7 @@ class Dataset():
 						one_of_data.append(Match_data["visionScore"][match])
 						one_of_data.append(minions_per_minute)
 						#one_of_data.append(champion_proficiency)
-						one_of_data.append(champion_proficiency/10000)
+						#one_of_data.append(champion_proficiency/10000)
 
 						#print(one_of_data)
 						one_of_data = np.array(one_of_data)

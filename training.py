@@ -15,7 +15,7 @@ def main():
 	random_seed=1
 
 	weight_decay = 5e-4
-	learning_rate = 0.0001
+	learning_rate = 0.00001
 
 	epochs = 2000
 	train_batch = 128
@@ -27,8 +27,8 @@ def main():
 
 	#--------------------------------------------------------
 
-	#np.random.seed(random_seed)
-	#torch.manual_seed(random_seed)
+	np.random.seed(random_seed)
+	torch.manual_seed(random_seed)
 
 	if torch.cuda.is_available():
 	    device = 'cuda' 
@@ -38,9 +38,11 @@ def main():
 	    device = 'cpu'
 
 	match_filenames = ['MatchInfo_GOLD4.json', 'MatchInfo_GOLD3.json', 'MatchInfo_GOLD2.json', 'MatchInfo_GOLD1.json',
-					   'MatchInfo_PLATINUM4.json', 'MatchInfo_PLATINUM3.json', 'MatchInfo_PLATINUM2.json', 'MatchInfo_PLATINUM1.json']
+					   'MatchInfo_PLATINUM4.json', 'MatchInfo_PLATINUM3.json', 'MatchInfo_PLATINUM2.json', 'MatchInfo_PLATINUM1.json',
+                       'MatchInfo_SILVER4.json', 'MatchInfo_SILVER3.json', 'MatchInfo_SILVER2.json', 'MatchInfo_SILVER1.json']
 	user_filenames = ["UserInfo_GOLD4.json", "UserInfo_GOLD3.json", "UserInfo_GOLD2.json", "UserInfo_GOLD1.json",
-					  "UserInfo_PLATINUM4.json", "UserInfo_PLATINUM3.json", "UserInfo_PLATINUM2.json", "UserInfo_PLATINUM1.json"]
+					  "UserInfo_PLATINUM4.json", "UserInfo_PLATINUM3.json", "UserInfo_PLATINUM2.json", "UserInfo_PLATINUM1.json",
+                      "UserInfo_SILVER4.json", "UserInfo_SILVER3.json", "UserInfo_SILVER2.json", "UserInfo_SILVER1.json"]
 	train_x = []
 	train_y = []
 	valid_x = []
@@ -67,26 +69,14 @@ def main():
 	valid_loader = DataLoader(valid_dataset, batch_size=train_batch)
 
 	model = nn.Sequential(
-				nn.Linear(12, 50),
+				nn.Linear(11, 50),
 				nn.LeakyReLU(negative_slope = 0.01, inplace = False),
-				#nn.ReLU(),
-				nn.Linear(50, 100),
+				nn.Linear(50, 30),
 				nn.LeakyReLU(negative_slope = 0.01, inplace = False),
-				#nn.ReLU(),
-				#nn.Linear(40, 50),
-				#nn.LeakyReLU(negative_slope = 0.01, inplace = False),
-				#nn.ReLU(),
-				#nn.Linear(50, 40),
-				#nn.LeakyReLU(negative_slope = 0.01, inplace = False),
-				# #nn.ReLU(),
-				#nn.Linear(40, 30),
-				#nn.LeakyReLU(negative_slope = 0.01, inplace = False),
-				# nn.ReLU(),
-				#nn.Linear(30, 20),
-				#nn.LeakyReLU(negative_slope = 0.01, inplace = False),
-				nn.Linear(100, 10),
+				nn.Linear(30, 20),
 				nn.LeakyReLU(negative_slope = 0.01, inplace = False),
-				# nn.ReLU(),
+				nn.Linear(20, 10),
+				nn.LeakyReLU(negative_slope = 0.01, inplace = False),
 				nn.Linear(10, 1),
 				nn.Sigmoid()
 				)
