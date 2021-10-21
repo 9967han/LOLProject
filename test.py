@@ -37,9 +37,6 @@ if __name__ == "__main__":
     TP_num = 0
     FP_num = 0
     FN_num = 0
-    TN_num = 0
-    positive_num = 0
-    negative_num = 0
 
     for _, batch_data in enumerate(test_loader):
         batch_x, batch_y = batch_data
@@ -48,13 +45,7 @@ if __name__ == "__main__":
 
         prediction = hypothesis >= torch.FloatTensor([0.5])
         correct_prediction = prediction.float() == batch_y
-        incorrect_precition = prediction.float() != batch_y
         correct += correct_prediction.sum().item()
-
-        positive_prediction = batch_y == torch.FloatTensor([1.0])
-        positive_num += positive_prediction.sum().item()
-        negative_prediction = batch_y == torch.FloatTensor([0.0])
-        negative_num += negative_prediction.sum().item()
 
         for b, p in zip(batch_y, prediction):
             if b == torch.FloatTensor([1.0]) and p == torch.FloatTensor([1.0]):
@@ -63,19 +54,13 @@ if __name__ == "__main__":
                 FP_num += 1
             elif b == torch.FloatTensor([1.0]) and p == torch.FloatTensor([0.0]):
                 FN_num += 1
-            else: 
-                TN_num += 1
 
     accuracy = correct/len(test_dataset)
 
     print("Accuracy is {:2.2f}%".format(accuracy * 100))
-    #print(positive_num, negative_num)
-    #print(TP_num, FP_num, FN_num, TN_num)
     recall = TP_num / (TP_num + FN_num)
     precision = TP_num / (TP_num + FP_num)
     f1_score = (2*precision*recall) / (precision + recall)
     print("Precision is {:.2f}".format(precision))
     print("Recall is {:.2f}".format(recall))
     print("F1-Score is {:.2f}".format(f1_score))
-
-# T/TP + FN

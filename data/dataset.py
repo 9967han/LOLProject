@@ -56,7 +56,6 @@ class Dataset():
 
 				for user_name in Each_Match_of_User:
 					for match in Each_Match_of_User[user_name]:
-						#print(user_name, match)
 
 						one_of_data = []
 						if Match_data["deaths"][match] != 0:
@@ -75,19 +74,15 @@ class Dataset():
 
 
 						champion = int(Match_data["championId"][match])
-						#print(champion, type(champion))
 						if champion > 300000:
 							continue
 						champion = str(champion)
 						champion_proficiency = User_proficiency_data[champion][user_index[user_name]]
 
 						one_of_data.append(Match_data["largestKillingSpree"][match])
-						#one_of_data.append(gold_per_minute)
 						one_of_data.append(gold_per_minute/100)
 						one_of_data.append(kda_of_user)
-						#one_of_data.append(damage_dealt_per_minute)
 						one_of_data.append(damage_dealt_per_minute/100)
-						#one_of_data.append(damage_taken_per_minute)
 						one_of_data.append(damage_taken_per_minute/100)
 						one_of_data.append(Match_data["detectorWardsPlaced"][match])
 						one_of_data.append(Match_data["killingSprees"][match])
@@ -95,10 +90,6 @@ class Dataset():
 						one_of_data.append(Match_data["wardsPlaced"][match])
 						one_of_data.append(Match_data["visionScore"][match])
 						one_of_data.append(minions_per_minute)
-						#one_of_data.append(champion_proficiency)
-						#one_of_data.append(champion_proficiency/10000)
-
-						#print(one_of_data)
 						one_of_data = np.array(one_of_data)
 						one_of_data = (one_of_data - one_of_data.mean())/one_of_data.std()
 						one_of_data = list(one_of_data)
@@ -112,7 +103,6 @@ class Dataset():
 			num_data = len(data)
 
 			data = np.array(data)
-			#data = (data - data.mean())/data.std()
 			target = np.array(target)
 
 			if mode == "training":
